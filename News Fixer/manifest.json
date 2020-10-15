@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "News Fixer",
+    "description": "Fixes the name of some common news outlets",
+    "version": "1.5",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
